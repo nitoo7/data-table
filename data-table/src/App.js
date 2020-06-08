@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "./components/header";
 import Body from "./components/body";
-import './App.css';
 
 const mock = {
   header: ["productName", "skuID", "quantity", "price"],
@@ -13,9 +12,14 @@ const mock = {
   ]
 };
 
+const styles = {
+  margin: "auto",
+  "margin-top": "100px"
+}
+
 function App() {
   return (
-    <table className="table">
+    <table style={styles}>
       <Header data={mock.header}/>
       <Body data={mock.body} />
     </table>

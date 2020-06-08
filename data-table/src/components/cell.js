@@ -1,10 +1,16 @@
 import React from "react";
 
+const styles = {
+    border: "1px solid #ddd",
+    "text-align": "left",
+    padding: "8px"
+}
+
 const Cell = ({ data, type }) =>
   type === "header" ? (
-    <th className="cell">{data}</th>
+    <th style={styles}>{data}</th>
   ) : (
-    <td className="cell">{data}</td>
+    <td style={styles}>{data}</td>
   );
 
 export default Cell;
